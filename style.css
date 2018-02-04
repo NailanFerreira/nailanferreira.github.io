@@ -1,0 +1,122 @@
+﻿
+body{
+    background-color: #f0f0f0;
+    font-family: 'Oswald', sans-serif;
+}
+
+/****** CABEÇALHO *****/
+.cabecalho{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 55px;
+    border-bottom: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 60%;
+    margin: 0 auto;
+    padding: 3px;
+    font-size: 27px;
+	text-align: center;
+}
+
+.azul{
+    color: deepskyblue
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+/********* DESIGN DAS TABELAS *********/
+table {
+    width: 100%;
+}
+
+label{
+	display: block;
+}
+
+
+th{
+    background-color: #eee;
+    text-align: left;
+}
+
+
+.info-table th, td{
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+
+/********* DESIGN DOS BOTÕES *********/
+
+button{
+    padding: 20px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    background-color: deepskyblue;
+    border: 0px;
+    border-radius: 10px;
+    width: 120px;
+    
+}
+
+button:active{
+    background-color: black;
+    
+}
+/********* DESIGN DO FORMULÁRIO *********/
+
+input{
+	width: 100%;
+	margin: 12.4px 0;
+    padding: 8px;
+    border-radius: 10px;
+	box-sizing: border-box;
+}
+
+fieldset{
+	border: 0;
+}
+
+.content{
+	display: flex;
+	width: 100%;
+}
+
+.item1, .item2{
+	width: 50%;
+}
+
+.item1{
+	margin-right: 5px;
+}
+
+.item2{
+	margin-left: 5px;
+}
+
+/****** MAIN *****/
+.container{
+    width: 68%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 1px 2px 8px;
+}
+
+
+.cadastrar, .cadastrados{
+    margin: 20px;
+}
+
+@media (max-width: 550px){
+	.info-table th, td{
+		padding: 0px;
+	}
+}
