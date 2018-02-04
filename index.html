@@ -1,86 +1,34 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
 
-<head lang="pt-br">
-	<meta charset="UTF-8">
-	<title>Curse of JS</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="reset.css">
-
-	<!-- fontes -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-</head>
-
-<body>
-	<header class="cabecalho">
-		<div class="logo">
-			<h1 class="logo">CALC<span class="azul">IMC</span></h1>
-
+<html>
+	<head lang="pt-br">
+		<title>Layout Simples</title>
+		<meta name="author" content="Nailan Ferreira">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<div class="principal">
+			<header>
+				<p>CABEÇALHO</p>
+			</header>
+			
+			<nav>
+				<p>MENU</p>
+			</nav>
+			
+			<section>
+				<p>CONTEÚDO</p>
+			</section>
+			
+			<aside>
+				<p>INFORMAÇÕES</p>
+			</aside>
+			
+			<footer>
+				<p>RODAPÉ</p>
+			</footer>
 		</div>
-	</header>
-	<main class="container">
-		<section class="cadastrados">
-			<h2>Cadastrados</h2>
-			<hr>
-			<table class="info-table">
-				<tr>
-					<th>Nome</th>
-					<th>Peso(kg)</th>
-					<th>Altura(m)</th>
-					<th>IMC</th>
-				</tr>
-				<tr class="paciente">
-					<td class="nome">Leonardo</td>
-					<td class="peso">57</td>
-					<td class="altura">1.67</td>
-					<td class="imc-result"></td>
-				</tr>
-				<tr class="paciente">
-					<td class="nome">Paulo</td>
-					<td class="peso">100</td>
-					<td class="altura">1.82</td>
-					<td class="imc-result"></td>
-				</tr>
-				<tr class="paciente">
-					<td class="nome">Maria</td>
-					<td class="peso">68</td>
-					<td class="altura">1.71</td>
-					<td class="imc-result"></td>
-				</tr>
-				<tr class="paciente">
-					<td class="nome">Carla</td>
-					<td class="peso">83</td>
-					<td class="altura">1.80</td>
-					<td class="imc-result"></td>
-				</tr>
-
-			</table>
-			<button type="submit">Calcular IMCs</button>
-		</section>
-
-		<section class="cadastrar">
-			<h2>Cadastrar</h2>
-			<hr>
-			<form>
-				<fieldset>
-					<label for="nome">Nome:</label>
-					<input type="text" placeholder="Nome">
-				</fieldset>
-				<section class="content">
-					<aside class="item1">
-						<label for="Peso">Peso:</label>
-						<input class="in-peso" type="text" placeholder="Peso">
-					</aside>
-					<aside class="item2">
-						<label for="Altura">Altura:</label>
-						<input type="text" placeholder="Altura">
-					</aside>
-				</section>
-				<button type="submit">Cadastrar</button>
-			</form>
-		</section>
-	</main>
-	<script src="script.js"></script>
-</body>
+	</body>
 </html>
