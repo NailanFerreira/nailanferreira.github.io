@@ -1,35 +1,35 @@
 
-//Formula IMC = peso / (altura * altura)
+function calculaImc(pessoa) {
+    //parametros validos tem de ser maior que zero
+    var parametrosValidos = (pessoa.altura > 0 && pessoa.peso > 0); 
 
+    if (parametrosValidos) {
+        //calcular e retornar resultado imc
+        return (pessoa.peso / (pessoa.altura * pessoa.altura));
+    }
+    else{
+        alert("As informaçõs PESO e ALTURA devem ser maiores que 0!");
+        return false;
+    }
+}
 
+//pegando quantidade de pessoas cadastradas
+var listaPessoas = document.getElementsByClassName("pessoa");
+
+//lendo informações "peso e altura" de cada pessoa cadastrada
 var tdPeso = document.getElementsByClassName("peso");
 var tdAltura = document.getElementsByClassName("altura");
 var tdResultImc = document.getElementsByClassName("imc-result");
 
-var peso;
-var altura;
-for (var i = 0; i < tdPeso.length; i++) {
-    //pega as informações de cada paciente
-    var peso = tdPeso[i].textContent;
-    var altura = tdAltura[i].textContent;
-
-    //parametros validos tem de ser maior que zero
-    var parametrosValidos = (altura > 0 && peso > 0);
-
-    if (parametrosValidos) {
-        //calcular e retornar resultado imc
-        var imc = peso / (altura * altura);
-        tdResultImc[i].textContent = imc.toFixed(2);
+for (var i = 0; i < listaPessoas.length; i++) {
+    //cria objeto pessoaAtual
+    var pessoaAtual = {
+        peso: tdPeso[i].textContent,
+        altura: tdAltura[i].textContent
     }
-    else {
-        if (peso <= 0 && altura <= 0) {
-            alert("Peso e Altura devem ser maior que 0!");
-        }
-        else if (peso <= 0) {
-            alert("Peso deve ser maior que 0!");
-        }
-        else if (altura <= 0) {
-            alert("Altura deve ser maior que 0!");
-        }
-    }
+
+    var imc = calculaImc(pessoaAtual);
+
+    //armazenando resultado na tabela
+    tdResultImc[i].textContent = imc.toFixed(2);
 }
