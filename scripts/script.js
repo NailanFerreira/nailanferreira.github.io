@@ -24,7 +24,6 @@ function calculaTodosImcs() {
 var imc = document.getElementById("calcula-imc");
 imc.addEventListener("click", calculaTodosImcs);
 
-
 /* testando eventos futuros
 var todasTr = document.getElementsByTagName("tr");
 for(var i = 0; i < todasTr.length; i++){

@@ -16,11 +16,35 @@
 <body>
 	<header class="cabecalho">
 		<div class="logo">
-			<h1 class="logo">CALC<span class="azul">IMC</span></h1>
+			<h1 class="logo">CALC
+				<span class="azul">IMC</span>
+			</h1>
 			<h2 class="copy">&copy;Nailan Ferreira</h3>
 		</div>
 	</header>
 	<main class="container">
+		<section class="cadastrar">
+			<h2>Cadastrar</h2>
+			<hr>
+			<form>
+				<fieldset>
+					<label for="nome">Nome:</label>
+					<input type="text" placeholder="Nome">
+				</fieldset>
+				<section class="content">
+					<aside class="item1">
+						<label for="Peso">Peso:</label>
+						<input class="in-peso" type="text" placeholder="Peso">
+					</aside>
+					<aside class="item2">
+						<label for="Altura">Altura:</label>
+						<input type="text" placeholder="Altura">
+					</aside>
+				</section>
+				<button id="cadastra-pessoa">Cadastrar</button>
+			</form>
+		</section>
+
 		<section class="cadastrados">
 			<h2>Cadastrados</h2>
 			<hr>
@@ -59,31 +83,10 @@
 			</table>
 			<button id="calcula-imc">Calcular IMCs</button>
 		</section>
-
-		<section class="cadastrar">
-			<h2>Cadastrar</h2>
-			<hr>
-			<form>
-				<fieldset>
-					<label for="nome">Nome:</label>
-					<input type="text" placeholder="Nome">
-				</fieldset>
-				<section class="content">
-					<aside class="item1">
-						<label for="Peso">Peso:</label>
-						<input class="in-peso" type="text" placeholder="Peso">
-					</aside>
-					<aside class="item2">
-						<label for="Altura">Altura:</label>
-						<input type="text" placeholder="Altura">
-					</aside>
-				</section>
-				<button id="cadastra-pessoa">Cadastrar</button>
-			</form>
-		</section>
 	</main>
 	<script src="scripts/scriptsHeader.js"></script>
 	<script src="scripts/script.js"></script>
 
 </body>
+
 </html>
