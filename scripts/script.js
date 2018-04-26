@@ -22,5 +22,15 @@ function calculaTodosImcs() {
 }
 
 var imc = document.getElementById("calcula-imc");
-imc.addEventListener("click", calculaTodosImc;
+imc.addEventListener("click", calculaTodosImcs);
+
+
+/* testando eventos futuros
+var todasTr = document.getElementsByTagName("tr");
+for(var i = 0; i < todasTr.length; i++){
+    todasTr[i].addEventListener("click", function(){
+        this.setAttribute("bgcolor", "grey");
+    })
+}
+*/
 
