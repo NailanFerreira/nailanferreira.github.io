@@ -34,11 +34,11 @@
 				<section class="content">
 					<aside class="item1">
 						<label for="Peso">Peso:</label>
-						<input id="in-peso" class="in-peso" type="text" placeholder="Peso">
+						<input id="in-peso" class="in-peso" type="text" placeholder="Peso" onkeydown="return somenteNumero(event)" >
 					</aside>
 					<aside class="item2">
 						<label for="Altura">Altura:</label>
-						<input id="in-altura" type="text" placeholder="Altura">
+						<input id="in-altura" type="text" placeholder="Altura" onkeydown="return somenteNumero(event)">
 					</aside>
 				</section>
 				<button id="cadastra-pessoa">Cadastrar</button>
@@ -87,6 +87,7 @@
 	<script src="scripts/cadastra_pessoa.js"></script>
 	<script src="scripts/cria_pessoa.js"></script>
 	<script src="scripts/calcula_imc.js"></script>
+	<script src="scripts/somenteNumeros.js"></script>
 
 </body>
 

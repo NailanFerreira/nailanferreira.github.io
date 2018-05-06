@@ -20,7 +20,6 @@ function calculaTodosImcs() {
 
     }
 }
-
 var imc = document.getElementById("calcula-imc");
 imc.addEventListener("click", calculaTodosImcs);
 
