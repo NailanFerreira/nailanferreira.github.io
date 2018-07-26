@@ -16,7 +16,24 @@ function criaPessoa(tdNome, tdPeso, tdAltura) {
                 alert("As informaçõs PESO e ALTURA devem ser maiores que 0!");
                 return false;
             }
+        },
+
+        calculaSituacao: function (imcResult) {
+            
+            if (imcResult < 18.5){
+                return "Abaixo do Peso";
+            }else if (imcResult >= 18.5 && imcResult < 25){
+                return "Normal";
+            }else if (imcResult >= 25 && imcResult < 30){
+                return "Excesso de Peso";
+            }else if (imcResult >= 30 && imcResult < 40){
+                return "Obeso";
+            }else if (imcResult >= 40){
+                return "Obeso Mórbido";
+            }
         }
+
+        
     }
     return pessoa;
 }

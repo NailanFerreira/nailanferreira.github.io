@@ -13,6 +13,7 @@ cadastraPessoa.addEventListener("click", function (event) {
         '<td class="peso">' + peso.value + '</td>' +
         '<td class="altura">' + altura.value + '</td>' +
         '<td class="imc-result"></td>' +
+        '<td class="imc-situacao"></td>' +
         '</tr>'
 
     var table = document.getElementsByClassName("info-table")[0];
